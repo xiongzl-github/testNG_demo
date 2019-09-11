@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite" parallel="true">
+    <test verbose="2" preserve-order="true" name="selenium01Test">
+        <parameter name="platform" value="Linux"></parameter>
+        <parameter name="browser" value="chrome"></parameter>
+        <parameter name="url" value="https://www.baidu.com/"></parameter>
+        <parameter name="node_url" value="http://192.168.199.103:5656/wd/hub"></parameter>
+        <classes>
+            <class name="top.timebook.SeleniumGridParalleTestFramework"></class>
+        </classes>
+    </test>
+    <test verbose="2" preserve-order="true" name="selenium02Test">
+        <parameter name="platform" value="Linux"></parameter>
+        <parameter name="browser" value="chrome"></parameter>
+        <parameter name="url" value="https://www.baidu.com/"></parameter>
+        <parameter name="node_url" value="http://192.168.199.104:5656/wd/hub"></parameter>
+        <classes>
+            <class name="top.timebook.SeleniumGridParalleTestFramework"></class>
+        </classes>
+    </test>
+</suite>

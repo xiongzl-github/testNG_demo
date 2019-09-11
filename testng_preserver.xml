@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <!--
+        preserve-order: 可以调整class执行的顺序
+        enabled: 可以决定这个test是否执行
+    -->
+    <test preserve-order="true" name="test01">
+        <classes>
+            <class name="top.timebook.TestNG_Preserve02"></class>
+            <class name="top.timebook.TestNG_Preserve01"></class>
+        </classes>
+    </test>
+    <test preserve-order="true" name="test02" enabled="false">
+        <classes>
+            <class name="top.timebook.TestNG_Preserve02"></class>
+            <class name="top.timebook.TestNG_Preserve01"></class>
+        </classes>
+    </test>
+</suite>

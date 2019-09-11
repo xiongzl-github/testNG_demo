@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<!--
+    parallel: 可以指定test, class, method并行执行
+    thread-count: 可以指定开启几个线程
+-->
+<suite name="All Test Suite" parallel="tests" thread-count="4">
+    <test verbose="2" preserve-order="true" name="test01">
+        <classes>
+            <class name="top.timebook.TestNG_Parallel01"></class>
+        </classes>
+    </test>
+    <test verbose="2" preserve-order="true" name="test02">
+        <classes>
+            <class name="top.timebook.TestNG_Parallel02"></class>
+        </classes>
+    </test>
+</suite>

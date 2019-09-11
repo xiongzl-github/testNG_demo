@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="E:/project/testNG-demo">
+        <groups>
+            <define name="all">
+                <include name="suv"></include>
+                <include name="bike"></include>
+                <include name="sedan"></include>
+            </define>
+            <define name="no_bike">
+                <include name="suv"></include>
+                <include name="sedan"></include>
+            </define>
+            <run >
+                <include name="no_bike"></include>
+            </run>
+        </groups>
+        <classes>
+            <class name="top.timebook.TestNG_group"></class>
+        </classes>
+    </test>
+</suite>
