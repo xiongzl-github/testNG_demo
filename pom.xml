@@ -160,7 +160,7 @@
                 <configuration>
                     <argLine>-Dfile.encoding=UTF-8</argLine>
                     <suiteXmlFiles>
-                        <suiteXmlFile>testng_jenkins.xml</suiteXmlFile>
+                        <suiteXmlFile>testng_group.xml</suiteXmlFile>
                     </suiteXmlFiles>
                 </configuration>
             </plugin>
