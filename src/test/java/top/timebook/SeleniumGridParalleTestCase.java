@@ -20,7 +20,7 @@ public class SeleniumGridParalleTestCase {
 
     @BeforeClass
     private void beforeClass() {
-//        setWebDriver();
+        setWebDriver();
         webDriver = getWebDriver(new ChromeDriver());
     }
 
